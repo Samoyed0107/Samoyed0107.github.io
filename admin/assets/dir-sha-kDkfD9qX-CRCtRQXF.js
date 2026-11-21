@@ -1,0 +1,1 @@
+import{aR as i}from"./index-QIzOvS3x.js";var $=4,f=/^[\da-f]{40,64}$/,p=(a,n)=>{let r=i($);return{fetchDirSHA:async(t,o)=>{let e=`${a.owner}/${a.repo}:${t}:${o}`;if(r.has(e))return r.get(e);let s=await n(t,o);return f.test(t)&&r.set(e,s),s},resetDirLookups:()=>{r.clear()}}};export{p as r};
